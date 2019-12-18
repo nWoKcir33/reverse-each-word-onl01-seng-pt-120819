@@ -6,3 +6,12 @@ def reverse_each_word(sentence1)
   end
   return_array.join(" ")
 end
+
+def reverse_each_word(sentence1)
+  array = sentence1.split(" ")
+  this_array = []
+  array.collect do |sentence1|
+    this_array << sentence1.reverse
+  end
+  this_array.join(" ")
+end
